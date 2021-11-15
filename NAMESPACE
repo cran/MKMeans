@@ -1,0 +1,13 @@
+import(methods)
+
+export(
+ "C.f",
+ "Dist",
+ "MKMeans"
+  
+)
+
+exportClasses(MKMean)
+
+
+
