@@ -10,11 +10,11 @@ Dist(x,y,type)
 \arguments{
   \item{x}{ Numeric. A vector denoting an observation.}
   \item{y}{ Numeric. A vector denoting an observation.}
-  \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance.}
+  \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance. 2 for Manhattan distance. 3 for maximum deviation among dimensions.}
 }
-\value{A list.}
+\value{A numeric number.}
 \author{Yi Ya and Yarong Yang }
-\references{Yi Ya, Yarong Yang, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
 }
 \examples{
 x<-rnorm(10,0,1)

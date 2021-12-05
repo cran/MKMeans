@@ -16,13 +16,13 @@ new("MKMean",K=new("numeric"),Centers=new("matrix"),Classes=new("list"),Clusters
 \section{Slots}{
   \describe{
     \item{\code{K}:}{An integer being the number of clusters.}
-    \item{\code{Centers}:}{A numeric matrix with each row being the center of a cluster.}
+    \item{\code{Centers}:}{A numeric matrix with each row being center of a cluster.}
     \item{\code{Classes}:}{An integer list showing the original indexes of the observations in each cluster.}
     \item{\code{Clusters}:}{ A numeric list showing the observations in each cluster.  }
     }
 }
 
-\references{Yi Ya, Yarong Yang, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
 }
 \author{
 Yi Ya and Yarong Yang

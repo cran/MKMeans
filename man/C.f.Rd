@@ -9,11 +9,12 @@ C.f(dat, type)
 }
 \arguments{
   \item{dat}{ Numeric. A cluster matrix with each row being an observaion.}
-  \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance.}
+   \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance. 2 for Manhattan distance. 3 for maximum deviation along dimensions.}
 }
+
 \value{A vector.}
 \author{Yi Ya and Yarong Yang }
-\references{Yi Ya, Yarong Yang, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
 }
 \examples{
 x<-rnorm(5,0,1)
