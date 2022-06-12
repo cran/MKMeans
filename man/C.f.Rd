@@ -13,8 +13,8 @@ C.f(dat, type)
 }
 
 \value{A vector.}
-\author{Yi Ya and Yarong Yang }
-\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\author{Yi Ya }
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
 }
 \examples{
 x<-rnorm(5,0,1)

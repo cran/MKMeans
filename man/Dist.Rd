@@ -13,8 +13,8 @@ Dist(x,y,type)
   \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance. 2 for Manhattan distance. 3 for maximum deviation among dimensions.}
 }
 \value{A numeric number.}
-\author{Yi Ya and Yarong Yang }
-\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\author{Yi Ya }
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
 }
 \examples{
 x<-rnorm(10,0,1)

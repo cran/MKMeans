@@ -12,13 +12,13 @@ MKMeans(data, K, initial, iteration, tol, type)
   \item{K}{ Integer.  The number of clusters expected.}
   \item{initial}{ Numeric. Either the selected initial center matrix with each row being an observation, or 1 for the first K rows of the data matrix being the intial center.     }
   \item{iteration}{ Integer. The number of the most iterations wanted for the clustering process. }
-  \item{tol}{ Numeric. The minimum acceptable percentage of stable observations to stop the clustering process, basically greater than 0.5 to guarantee the value of the results.. }
+  \item{tol}{ Numeric. The minimum acceptable percentage of stable observations to stop the clustering process, basically greater than 0.5 to guarantee the value of the results. }
   \item{type}{ Integer. The type of distance between observations. 1 for Euclidean distance. 2 for Manhattan distance. 3 for maximum deviation among dimensions.}
 }
 
 \value{An object of class MKMean.}
-\author{Yi Ya and Yarong Yang }
-\references{Yi Ya, Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang. MKMeans: A Modern K-Means Clustering Algorithm. ongoing
+\author{Yi Ya}
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
 }
 \examples{
 x<-rnorm(20,0,1)

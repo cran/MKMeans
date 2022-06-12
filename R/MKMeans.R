@@ -56,7 +56,7 @@ MKMeans<-function(data, K, initial, iteration, tol, type) {
             cl.previous[[15]]<-cl.old
             cl.old<-cl
 
-            cat("Iteration:",it,"-----","Stable Percentage:",p,"-----","TSD: ",S,"\n")
+            cat("Iteration:",it,"-----","Stable Percentage:",p,"-----","Total Sum of Distances: ",S,"\n")
 	   }
 
 
