@@ -1,5 +1,5 @@
 \name{MKMean}
-\Rdversion{2.1}
+\Rdversion{3.0}
 \docType{class}
 \alias{MKMean-class}
 
@@ -22,7 +22,7 @@ new("MKMean",K=new("numeric"),Centers=new("matrix"),Classes=new("list"),Clusters
     }
 }
 
-\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. 
 }
 \author{
 Yi Ya 

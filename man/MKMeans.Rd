@@ -18,7 +18,7 @@ MKMeans(data, K, initial, iteration, tol, type)
 
 \value{An object of class MKMean.}
 \author{Yi Ya}
-\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. 
 }
 \examples{
 x<-rnorm(20,0,1)

@@ -14,7 +14,7 @@ Dist(x,y,type)
 }
 \value{A numeric number.}
 \author{Yi Ya }
-\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of American Statistical Association
+\references{Yarong Yang(Yi Ya) and Jacob Zhang.(2022) MKMeans: A Modern K-Means Clustering Algorithm. 
 }
 \examples{
 x<-rnorm(10,0,1)

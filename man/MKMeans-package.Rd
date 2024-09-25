@@ -10,13 +10,13 @@
 \tabular{ll}{
 Package: \tab MKMeans\cr
 Type: \tab Package\cr
-Version: \tab 2.1\cr
-Date: \tab 2022-06-12\cr
+Version: \tab 3.0\cr
+Date: \tab 2023-9-23\cr
 License: \tab GPL-2\cr
 }
  }
 \author{ Yi Ya, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang  }
-\references{ Yarong Yang(Yi Ya) and Jacob Zhang.(2022)  MKMeans: A Modern K-Means Clustering Algorithm. submitted to Journal of Statistical Association
+\references{ Yarong Yang(Yi Ya) and Jacob Zhang.(2022)  MKMeans: A Modern K-Means Clustering Algorithm. 
 }
 
 \keyword{package }
