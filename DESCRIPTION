@@ -1,9 +1,9 @@
 Package: MKMeans
 Type: Package
 Title: A Modern K-Means (MKMeans) Clustering Algorithm
-Version: 3.0
-Date: 2024-09-23
-Authors@R: c(person("Yi", "Ya", role=c("aut","cre"),email="Yi.YA_yaya@hotmail.com"),
+Version: 3.1
+Date: 2024-10-09
+Authors@R: c(person("Yarong", "Yang", role=c("aut","cre"),email="Yi.YA_yaya@hotmail.com"),
              person("Nader", "Ebrahimi", role="aut", email="nebrahimi@niu.edu"),
              person("Yoram", "Rubin", role="aut", email="rubin@ce.berkeley.edu"),
              person("Jacob", "Zhang", role="aut", email="zjz999@gmail.com"))
@@ -12,11 +12,11 @@ Description: It's a Modern K-Means clustering algorithm allowing data of any num
 Collate: AllClasses.R MKMeans.R C.f.R Dist.R
 License: GPL-2
 NeedsCompilation: no
-Packaged: 2024-09-25 00:09:33 UTC; yi_ya
-Author: Yi Ya [aut, cre],
+Packaged: 2024-10-08 17:43:28 UTC; yi_ya
+Author: Yarong Yang [aut, cre],
   Nader Ebrahimi [aut],
   Yoram Rubin [aut],
   Jacob Zhang [aut]
-Maintainer: Yi Ya <Yi.YA_yaya@hotmail.com>
+Maintainer: Yarong Yang <Yi.YA_yaya@hotmail.com>
 Repository: CRAN
-Date/Publication: 2024-09-25 09:10:05 UTC
+Date/Publication: 2024-10-08 20:10:04 UTC

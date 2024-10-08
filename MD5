@@ -1,11 +1,11 @@
-6a7fa5a0ab94b389d4c0f138f0ae2fb4 *DESCRIPTION
+8dc9e3cb90ba1aaa9d5e79f94e316981 *DESCRIPTION
 fa97664ed43d2d40ceb37c8909096315 *NAMESPACE
 404501fbc53b46f3c049f5d0e6068779 *R/AllClasses.R
 6ea453fdae8ae555f224b0cd8886a72a *R/C.f.R
 f0a97f8c05f719748f791509337fca96 *R/Dist.R
 5a45ca721a394927fa2239d1d8b7a62f *R/MKMeans.R
-b0e868b7435eb0634e6b4aea956f67fd *man/C.f.Rd
-aa3eadc334a4b43851dfd5369c957115 *man/Dist.Rd
-6f093a714d9e1a69ab66ec3eba1f0ff1 *man/MKMean-class.Rd
-378eb826c1cdc9a2d298e3a532e157c1 *man/MKMeans-package.Rd
-daaf12e3e946bbedc78b99bb07a6ca47 *man/MKMeans.Rd
+20a1349a234d70ad98c42e7777b36f46 *man/C.f.Rd
+677f623da9c30b2d506ab1f79e496d41 *man/Dist.Rd
+834e617b8231af6ee556252d465728fe *man/MKMean-class.Rd
+573f6285e266efea77bce523b6f9c52c *man/MKMeans-package.Rd
+be97bab93d6a7ea210532a2bebf99432 *man/MKMeans.Rd
