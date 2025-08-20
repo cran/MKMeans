@@ -1,22 +1,22 @@
 Package: MKMeans
 Type: Package
 Title: A Modern K-Means (MKMeans) Clustering Algorithm
-Version: 3.1
-Date: 2024-10-09
+Version: 3.2
+Date: 2025-08-20
 Authors@R: c(person("Yarong", "Yang", role=c("aut","cre"),email="Yi.YA_yaya@hotmail.com"),
-             person("Nader", "Ebrahimi", role="aut", email="nebrahimi@niu.edu"),
-             person("Yoram", "Rubin", role="aut", email="rubin@ce.berkeley.edu"),
-             person("Jacob", "Zhang", role="aut", email="zjz999@gmail.com"))
-Depends: methods
-Description: It's a Modern K-Means clustering algorithm allowing data of any number of dimensions, any initial center, and any number of clusters to expect.
+             person("Nader", "Ebrahimi", role="ctb", email="nebrahimi@niu.edu"),
+             person("Yoram", "Rubin", role="ctb", email="rubin@ce.berkeley.edu"),
+             person("Jacob", "Zhang", role="ctb", email="zjz999@gmail.com"))
+Depends: methods, MASS
+Description: It's a Modern K-Means clustering algorithm which works for data of any number of dimensions, has no limit with number of clusters expected, and can start with any initial cluster centers.
 Collate: AllClasses.R MKMeans.R C.f.R Dist.R
 License: GPL-2
 NeedsCompilation: no
-Packaged: 2024-10-08 17:43:28 UTC; yi_ya
+Packaged: 2025-08-20 13:52:24 UTC; Yarong
 Author: Yarong Yang [aut, cre],
-  Nader Ebrahimi [aut],
-  Yoram Rubin [aut],
-  Jacob Zhang [aut]
+  Nader Ebrahimi [ctb],
+  Yoram Rubin [ctb],
+  Jacob Zhang [ctb]
 Maintainer: Yarong Yang <Yi.YA_yaya@hotmail.com>
 Repository: CRAN
-Date/Publication: 2024-10-08 20:10:04 UTC
+Date/Publication: 2025-08-20 14:40:07 UTC

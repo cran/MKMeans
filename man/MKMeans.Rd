@@ -2,7 +2,7 @@
 \alias{MKMeans}
 \title{Modern K-Means clustering.}
 \description{
-    It's a Modern K-Means clustering algorithm allowing data of any number of dimensions, any initial center, and any number of clusters to expect.
+    It's a Modern K-Means clustering algorithm which works for data of any number of dimensions, has no limit with the number of clusters expected, and can start with any initial cluster centers.
 }  
 \usage{
 MKMeans(data, K, initial, iteration, tol, type)
@@ -18,19 +18,63 @@ MKMeans(data, K, initial, iteration, tol, type)
 
 \value{An object of class MKMean.}
 \author{Yarong Yang}
-\references{Yarong Yang and Jacob Zhang.(2024) MKMeans: A Modern K-Means Clustering Algorithm. 
+\references{Yarong Yang, Nader Ebrahimi, Yoram Rubin, and Jacob Zhang.(2025) MKMeans: A Modern K-Means Clustering Algorithm. technical report
 }
 \examples{
-x<-rnorm(20,0,1)
-y<-rnorm(20,1,1)
-data.test<-cbind(x,y)
-Res<-MKMeans(data.test,3,1,iteration=1000,tol=.95,type=1)
-Ress<-Res
-names(Ress@Classes[[1]])<-rep("red",length(Res@Classes[[1]]))
-names(Ress@Classes[[2]])<-rep("blue",length(Res@Classes[[2]]))
-names(Ress@Classes[[3]])<-rep("green",length(Res@Classes[[3]]))
-Cols<-names(sort(c(Ress@Classes[[1]],Ress@Classes[[2]],Ress@Classes[[3]])))
-plot(x,y,type="p",col=Cols,lwd=2)
-points(Res@Centers,pch=15,col=c("red","blue","green")) 
-}
 
+library(MASS)
+# Generate 10 bivariate normal samples
+mu1 <- c(0, 0)          
+sigma1 <- matrix(c(1, 0.5, 0.5, 1), nrow=2)  
+SP1 <- mvrnorm(n=10, mu=mu1, Sigma=sigma1)
+
+# Generate another 10 bivariate normal samples
+mu2<-c(1,1)
+sigma2<-matrix(c(1,0,0,1),nrow=2)
+SP2<-mvrnorm(n=10,mu=mu2,Sigma=sigma2)
+
+# Generate 10 more new bivariate normal samples
+mu3<-c(2,2)
+sigma3<-matrix(c(1,0.5,0.5,1),nrow=2)
+SP3<-mvrnorm(n=10,mu=mu3,Sigma=sigma3)
+
+# Combine the three groups of bivariate normal samples
+data<-rbind(SP1,SP2,SP3)
+
+# Conduct MKMeans analysis with K=3 and randomly picking three samples as initial cluster centers
+Res<-MKMeans(data,3,data[sample(1:30,3),],iteration=1000,tol=.95,type=1)
+names(Res@Classes[[1]])<-rep("red",length(Res@Classes[[1]]))
+names(Res@Classes[[2]])<-rep("blue",length(Res@Classes[[2]]))
+names(Res@Classes[[3]])<-rep("green",length(Res@Classes[[3]]))
+Cols<-names(sort(c(Res@Classes[[1]],Res@Classes[[2]],Res@Classes[[3]])))
+plot(data[,1],data[,2],type="p",pch=19,col=Cols,lwd=2,xlab="",ylab="")
+points(Res@Centers,pch=5,col=c("red","blue","green")) 
+
+#  Compare the clustering results with the original samples 
+par(mfrow=c(1,2))
+plot(data[,1],data[,2],type="p",pch=19,col=rep(c("sky blue","orange","purple"),rep(10,3)),
+     lwd=2,xlab="",ylab="",main="Original Data")
+plot(data[,1],data[,2],type="p",pch=19,col=Cols,lwd=2,xlab="",ylab="",
+     main="MKMeans Clustering Results")
+points(Res@Centers,pch=5,col=c("red","blue","green")) 
+
+# conduct MKMeans analysis with K=4 and randomly picking four samples as initial cluster centers
+Res<-MKMeans(data,4,data[sample(1:30,4),],iteration=1000,tol=.95,type=1)
+names(Res@Classes[[1]])<-rep("red",length(Res@Classes[[1]]))
+names(Res@Classes[[2]])<-rep("blue",length(Res@Classes[[2]]))
+names(Res@Classes[[3]])<-rep("green",length(Res@Classes[[3]]))
+names(Res@Classes[[4]])<-rep("black",length(Res@Classes[[4]]))
+Cols<-names(sort(c(Res@Classes[[1]],Res@Classes[[2]],Res@Classes[[3]],Res@Classes[[4]])))
+plot(data[,1],data[,2],type="p",pch=19,col=Cols,lwd=2,xlab="",ylab="")
+points(Res@Centers,pch=5,col=c("red","blue","green","black"))
+
+#  Compare the clustering results with the original data
+par(mfrow=c(1,2))
+plot(data[,1],data[,2],type="p",pch=19,col=rep(c("sky blue","orange","purple"),rep(10,3)),
+     lwd=2,xlab="",ylab="",main="Original Data")
+plot(data[,1],data[,2],type="p",pch=19,col=Cols,lwd=2,xlab="",ylab="",
+     main="MKMeans Clustering Results")
+points(Res@Centers,pch=5,col=c("red","blue","green","black")) 
+
+
+}

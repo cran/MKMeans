@@ -1,11 +1,15 @@
 MKMeans<-function(data, K, initial, iteration, tol, type) {
 	
-	  if(initial==1) {
-            C<-data[1:K,]
-        } else { C<-initial}
+        if(is.matrix(initial)) {
+           if(nrow(initial)==K) C<-initial else {
+                cat("The number of initial centers doesn't match the number of clusters. The first K observations of the data set are automatically selected as initial cluster centers.\n")
+                C<-data[1:K,]
+           }
+        } else C<-data[1:K,]
 
-	  cl<-list()         # index cluster
-	  CL<-list()         # obs cluster
+
+	  cl<-list()         
+	  CL<-list()         
         cl.previous<-list()
         for(i in 1:15) cl.previous[[i]]<-list()
         cl.old<-list()
