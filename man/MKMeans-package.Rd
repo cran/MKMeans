@@ -10,8 +10,8 @@ and can start with any initial cluster centers.
 \tabular{ll}{
 Package: \tab MKMeans\cr
 Type: \tab Package\cr
-Version: \tab 3.2\cr
-Date: \tab 2025-08-20\cr
+Version: \tab 3.3\cr
+Date: \tab 2025-08-27\cr
 License: \tab GPL-2\cr
 }
  }
@@ -30,7 +30,7 @@ y<-rnorm(20,1,1)
 data.test<-cbind(x,y)
 
 # Conduct MKMeans analysis with K=3 and taking the first 3 samples as initial cluster centers 
-Res<-MKMeans(data.test,3,1,iteration=1000,tol=.95,type=1)
+Res<-MKMeans(data.test,3,1,iteration=1000,type=1)
 Ress<-Res
 names(Ress@Classes[[1]])<-rep("red",length(Res@Classes[[1]]))
 names(Ress@Classes[[2]])<-rep("blue",length(Res@Classes[[2]]))
@@ -60,7 +60,7 @@ SP3<-mvrnorm(n=10,mu=mu3,Sigma=sigma3)
 data<-rbind(SP1,SP2,SP3)
 
 # Conduct MKMeans analysis with K=4 and randomly picking four samples as initial cluster centers
-Res<-MKMeans(data,4,data[sample(1:30,4),],iteration=1000,tol=.95,type=1)
+Res<-MKMeans(data,4,data[sample(1:30,4),],iteration=1000,type=1)
 names(Res@Classes[[1]])<-rep("red",length(Res@Classes[[1]]))
 names(Res@Classes[[2]])<-rep("blue",length(Res@Classes[[2]]))
 names(Res@Classes[[3]])<-rep("green",length(Res@Classes[[3]]))

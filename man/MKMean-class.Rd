@@ -1,5 +1,5 @@
 \name{MKMean}
-\Rdversion{3.2}
+\Rdversion{3.3}
 \docType{class}
 \alias{MKMean-class}
 
@@ -11,7 +11,7 @@ the center of each cluster, and the observations in each cluster.
 }
 
 \section{Objects from the Class}{
-new("MKMean",K=new("numeric"),Centers=new("matrix"),Classes=new("list"),Clusters=new("list"))
+new("MKMean",K=new("numeric"),Centers=new("matrix"),Classes=new("list"),Clusters=new("list"),SSE=new("numeric"))
 }
 \section{Slots}{
   \describe{
@@ -19,6 +19,7 @@ new("MKMean",K=new("numeric"),Centers=new("matrix"),Classes=new("list"),Clusters
     \item{\code{Centers}:}{A numeric matrix with each row being center of a cluster.}
     \item{\code{Classes}:}{An integer list showing the original indexes of the observations in each cluster.}
     \item{\code{Clusters}:}{ A numeric list showing the observations in each cluster.  }
+    \item{\code{SSE}:}{A numeric vector composed of SSE of each cluster and the total SSE of all the clusters.}
     }
 }
 

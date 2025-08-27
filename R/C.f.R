@@ -17,4 +17,3 @@ C.f<-function(dat,type) {
        ct
 }
 
-

@@ -3,8 +3,7 @@ import(methods,MASS)
 export(
  "C.f",
  "Dist",
- "MKMeans"
-  
+ "MKMeans" 
 )
 
 exportClasses(MKMean)
