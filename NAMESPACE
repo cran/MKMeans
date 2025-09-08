@@ -1,4 +1,5 @@
-import(methods,MASS)
+import(methods,MASS,gtools)
+importFrom("utils","combn")
 
 export(
  "C.f",
